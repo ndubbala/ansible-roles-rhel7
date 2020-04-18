@@ -1,7 +1,8 @@
 ---
 - name: Configure RHEL7 Operating System.
   hosts: localhost
-  remote_user: root
+  become: yes
+  connection: local
   gather_facts: yes
 
   roles:
