@@ -1,14 +1,16 @@
 ---
 - name: "Create User"
   user:
-    name={{ username }}
-    password={{ user_password }}
-    groups=ec2-user
-    append=yes
-    shell=/bin/bash
+    name: {{ username }}
+    password: {{ user_password }}
+    groups: ec2-user
+    append: yes
+    shell: /bin/bash
 
-- name: Add Authorized Key
-  authorized_key: user={{ username }}
-                  key="{{ common_public_key }}"
-                  state=present
-# don't remove the "" or it will fail
+- name: printing ip address
+  debug:
+    msg: "my system ip address is {{ansible_default_ipv4.address }}"
+
+- name: uptime_admin
+  shell:
+    cmd: uptime
