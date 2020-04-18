@@ -2,6 +2,7 @@
 - name: "Create User"
   user:
     name={{ username }}
+    password={{ user_password }}
     groups=sudo
     append=yes
     shell=/bin/bash
