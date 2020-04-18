@@ -3,7 +3,7 @@
   user:
     name={{ username }}
     password={{ user_password }}
-    groups=sudo
+    groups=ec2-user
     append=yes
     shell=/bin/bash
 
