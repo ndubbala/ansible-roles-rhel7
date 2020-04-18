@@ -1,0 +1,14 @@
+---
+- name: Create User
+  user:
+    name={{ username }}
+    password={{ user_password }}
+    groups=sudo
+    append=yes
+    shell=/bin/bash
+
+- name: Add Authorized Key
+  authorized_key: user={{ username }}
+                  key="{{ common_public_key }}"
+                  state=present
+# don't remove the "" or it will fail
