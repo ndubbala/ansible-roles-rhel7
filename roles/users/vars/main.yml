@@ -12,6 +12,7 @@ users:
     home: /home/user2
   - username: user3
     name: user 3
+    group: 'dev1'
     groups: ['dev1','dev2', 'dev3']
     uid: 1030
     home: /home/user3
