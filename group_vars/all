@@ -11,8 +11,6 @@ users:
     groups: ['wheel','systemd-journal']
     uid: 1001
     home: /home/user1
-  - debug:
-    msg: {{ group }}
   - username: user2
     name: user 2
     groups: ['wheel','dev1', 'dev2']
