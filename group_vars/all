@@ -9,12 +9,12 @@ users:
   - username: user1
     name: user 1
     groups: ['wheel','systemd-journal']
-    uid: 1001
+    uid: 1010
     home: /home/user1
   - username: user2
     name: user 2
     groups: ['wheel','dev1', 'dev2']
-    uid: 1003
+    uid: 1030
     home: /home/user2
 
 groups_to_create:
