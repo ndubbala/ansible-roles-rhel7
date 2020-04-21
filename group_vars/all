@@ -20,11 +20,11 @@ users:
 groups_to_create:
   - name: dev1
     gid: 1001
-    name: dev2
+  - name: dev2
     gid: 1002
-    name: dev3
+  - name: dev3
     gid: 1003
-    name: dev4
+  - name: dev4
     gid: 1004
-    name: dev5
+  - name: dev5
     gid: 1005
