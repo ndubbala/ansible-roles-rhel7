@@ -7,4 +7,4 @@
 
   roles:
     - users
-    # - nginx
+    - rhel-lvm
