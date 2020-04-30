@@ -10,6 +10,6 @@
     state: directory
   become: true
   loop: "{{ folders_list }}"
-  when: >
-    item.create is defined and
-    item.create
+  # when: >
+  #   item.create is defined and
+  #   item.create
