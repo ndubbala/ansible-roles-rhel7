@@ -2,9 +2,9 @@
 
 - name: create_directories
   file:
-    owner: "{{ item.uid }}"
-    group: "{{ item.gid }}"
-    path: "{{ item.directory_path }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+    path: "{{ item.path }}"
     mode: "{{ item.mode }}"
     recurse: yes
     state: directory
