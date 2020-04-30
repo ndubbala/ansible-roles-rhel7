@@ -12,3 +12,8 @@ folders_list:
     group: user2
     path: "/var/tmp/testabc/"
     mode: 755
+
+  - owner: user3
+    group: user3
+    path: "/var/tmp/test123/"
+    mode: 777
